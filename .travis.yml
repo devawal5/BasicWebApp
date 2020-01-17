@@ -2,3 +2,10 @@ language: java
 jdk:
 - openjdk8
 script: mvn clean verify
+deploy:
+  provider: heroku
+  api_key:
+    secure: xuIy9Fqn8AxzIuO0t33UvyEBOfELQ5x6+hPS9KYQSOQGKwTYJxAugJCzlsN0xhdxvVz3h1P6PRWGKV13GM1Xw5mKGjHnwxCJUGUxjK/keDkO+Q1sHgvo+Rg0WVCMQkrw66b26VvOGVPK8moOrgDEByFuwiWAVtfCPTevF/GbUbLz11945zXFeIhInofaXuwsCT6OepsjuIXvmgO2AItylXI823mgcxistybOLzJdCPIbELpaKq/j19CeiKYWYINoU4BKo3whKpo/Lse0P+6eS1DrCdrVmHG7wL9+meNKm8AZYiyC5AKptbjQo/+HmtYECO7k5V6m0d/AuCahDV3mS4FxqOHtz6USWjvBjOtKr71TJiYP5hLsuDkiAheP//wqUDxNPV/kotJcz2v8keEwhshTpNbjCzgc73sZ+2+DDOeebU7kO8HTZbiCUQ4XYCh3OC6jo/hNCGyMJkTQoQmFE1uVtGd/L1tgn5hmd5xjw8TW96jyOlx2Hv2R2cRn1HjTqtyXdlkU6Udta439tCZjF8Uf3K2MhP7zBpAOY9Zu0nJDg6k3ceZ5THwdyFsjcIxJSsR8DtVN6UtqR4O4agkfTK/U5vv9PByikRvthMuW54Tg04xGChY0uVO46/fvAh7W/c1Wa1WThVEfQDU6Nllw8BUAWvKbVXHnhLwLrNab/JU=
+  app: unai-emery
+  on:
+    repo: devawal5/BasicWebApp
